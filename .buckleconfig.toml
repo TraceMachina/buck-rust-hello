@@ -1,0 +1,15 @@
+# `latest` or the release date in format YYYY-MM-DDD. See https://github.com/facebook/buck2/releases.
+# Can be overridden by setting the `USE_BUCK2_VERSION` environment variable.
+buck2_version = 2024-09-02
+
+# Whether or not Buckle should validate that the prelude hash matches the version of Buck2 that is specified.
+# There are reasonable scenarios where someone actively working on the build system might be carrying a patch on the standard prelude.
+# Can be overridden by setting the `BUCKLE_PRELUDE_CHECK` environment variable to `NO`.
+check_prelude = true
+
+# By default, Buckle stores the `buck2` binary in a different place dependent on the OS.
+# Linux: `$XDG_CACHE_HOME/buckle` or `$HOME/.cache/buckle`
+# MacOS: `$HOME/Library/Caches/buckle`
+# Windows `%LocalAppData%/buckle`
+# Can be overridden by setting the `BUCKLE_CACHE` environment variable.
+# buckle_dir = "/my/cache/dir/"
