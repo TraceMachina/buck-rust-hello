@@ -21,6 +21,7 @@ def _platforms(ctx):
         executor_config = CommandExecutorConfig(
             local_enabled = True,
             remote_enabled = True,
+            remote_cache_enabled = True,
             use_limited_hybrid = True,
             remote_execution_properties = {
                 "container-image": "rust:1.87",
