@@ -18,7 +18,7 @@ jobs:
           curl -OL https://github.com/benbrittain/buckle/releases/download/v1.1.0/buckle-x86_64-unknown-linux-gnu.tar.xz
           tar -Jxvf buckle-x86_64-unknown-linux-gnu.tar.xz
 
-      - uses: TraceMachina/nativelink-action@19474c93528dc1a7f25ea02e17f6ab3b0880d970
+      - uses: TraceMachina/nativelink-action@c521ecfd7eaded6f0bbc9060c21c7b5b7cd2dc1e
         with:
           api_key: ${{ secrets.NATIVELINK_API_KEY }}
           account: tom-parker-shemilt
