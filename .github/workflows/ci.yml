@@ -7,14 +7,14 @@ on:
 
 jobs:
   buck:
-    name: Buck2
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: true
 
-      - run: |
+      - name: Download buckle
+        run: |
           curl -OL https://github.com/benbrittain/buckle/releases/download/v1.1.0/buckle-x86_64-unknown-linux-gnu.tar.xz
           tar -Jxvf buckle-x86_64-unknown-linux-gnu.tar.xz
 
