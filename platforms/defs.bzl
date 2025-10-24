@@ -23,6 +23,7 @@ def _platforms(ctx):
             remote_enabled = True,
             use_limited_hybrid = True,
             remote_execution_properties = {
+                "container-image": "rust:1.87",
             },
             remote_execution_use_case = "buck2-default",
             remote_output_paths = "output_paths",
