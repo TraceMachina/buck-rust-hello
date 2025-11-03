@@ -27,3 +27,5 @@ jobs:
           build_system: buck2
 
       - run: ./buckle build //...
+        env:
+          USE_BUCK2_VERSION: 2025-11-01
